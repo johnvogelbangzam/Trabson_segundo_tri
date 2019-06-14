@@ -17,11 +17,12 @@
                 <input type="text" name="nome" id="nome">
                 <label for="foto">Foto:</label>
                 <input type="file" name="foto" id="foto">
-                <button>Enviar</button>
+                <button id="enviar">Enviar</button>
             </form>
         </section>
         <footer>
             <h5>Feito por: Gabriel Ledur, Giovane Müller e João Vogel</h5>
         </footer>
+        <script src="main.js"></script>
     </body>
 </html>

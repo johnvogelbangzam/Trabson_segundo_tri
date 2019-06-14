@@ -16,7 +16,7 @@
         <form method="POST" action="Processa.php">
             <div class="login"><input type="text" name="usuario" placeholder="Login"></div>
             <div class="login"><input type="password" name="senha" id="senha" placeholder="Senha"></div>
-            <div class="login"><button name="botão" value="Enviar">Enviar</button></div>
+            <div class="login"><button name="botão" value="Enviar" id="botao">Enviar</button></div>
         </form>
     </section>
     <footer>
