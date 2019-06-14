@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=B612+Mono&display=swap');
+body{
+    font-family: 'B612 Mono', monospace;
+    display: grid;
+    grid-template-columns : 1fr 4fr 1fr;
+    grid-template-rows : 1fr 4fr 1fr;
+    grid-template-areas :
+    " .header. "
+    " .section. "
+    " .footer. "
+}
+.login{
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    grid-area: header;
+    flex-direction: row;
+    justify-content: center;
+}
+section{
+    display: flex;
+    grid-area: section;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    grid-area: footer;
+    flex-direction: row;
+    justify-content: center;
+}
+
+input{
+    size: 20px;
+    font-size: 16px;
+}
