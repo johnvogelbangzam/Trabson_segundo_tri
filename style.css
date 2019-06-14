@@ -17,8 +17,9 @@ body{
 header{
     display: flex;
     grid-area: header;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 section{
     display: flex;

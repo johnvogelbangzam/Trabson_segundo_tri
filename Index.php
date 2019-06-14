@@ -10,12 +10,13 @@
 <body>
     <header>
         <h1>Randomizador de Lugares</h1>
+        <h2>Login</h2>
     </header>
     <section>
-        <form class="login" method="POST" action="Processa.php">
-            <div class="login"><input type="text" placeholder="Login"></div>
+        <form method="POST" action="Processa.php">
+            <div class="login"><input type="text" name="usuario" placeholder="Login"></div>
             <div class="login"><input type="password" name="senha" id="senha" placeholder="Senha"></div>
-            <div class="login"><button type="button">Enviar</button></div>
+            <div class="login"><button name="botão" value="Enviar">Enviar</button></div>
         </form>
     </section>
     <footer>
