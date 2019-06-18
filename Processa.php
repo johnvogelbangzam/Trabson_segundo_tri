@@ -4,15 +4,15 @@
             session_start();
             header("location: adm.php");        
         }else if($_POST['usuario'] != 'admin' || $_POST['senha'] != 'admin'){
-            header("sair.php");
+            header("location: sair.php");
         }
     }
     if(isset($_POST) && $_POST["botão"] == "Enviar"){
         if($_POST['usuario'] == 'professor' && $_POST['senha'] == 'professor' ){
             session_start();
-            header("location: Professor.php.php");        
+            header("location: Professor.php");        
         }else if($_POST['usuario'] != 'professor' || $_POST['senha'] != 'professor'){
-            header("sair.php");
+            header("location: sair.php");
         }
     }
 

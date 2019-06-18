@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Layout com Grid e Flex</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="estilo.css">
 </head>
 <body>
     <header>
@@ -13,14 +13,15 @@
         <h2>Login</h2>
     </header>
     <section>
-        <form method="POST" action="Processa.php">
+        <form method="POST" action="Processa.php" class="login">
             <div class="login"><input type="text" name="usuario" placeholder="Login"></div>
             <div class="login"><input type="password" name="senha" id="senha" placeholder="Senha"></div>
             <div class="login"><button name="botão" value="Enviar" id="botao">Enviar</button></div>
         </form>
     </section>
     <footer>
-        <h5>Feito por: Gabriel Ledur, Giovane Müller e João Vogel</h5>
+        <h4>Feito por: Gabriel Ledur, Giovane Müller e João Vogel</h4>
     </footer>
-    </body>
+    <script src='main.js'></script>
+</body>
 </html>

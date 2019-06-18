@@ -23,6 +23,5 @@
         <footer>
             <h5>Feito por: Gabriel Ledur, Giovane Müller e João Vogel</h5>
         </footer>
-        <script src="main.js"></script>
     </body>
 </html>
