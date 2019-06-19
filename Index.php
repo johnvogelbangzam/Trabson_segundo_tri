@@ -13,15 +13,14 @@
         <h2>Login</h2>
     </header>
     <section>
-        <form method="POST" action="Processa.php" class="login">
+        <form method="POST" action="Processa.php" enctype="multipart/form-data">
             <div class="login"><input type="text" name="usuario" placeholder="Login"></div>
             <div class="login"><input type="password" name="senha" id="senha" placeholder="Senha"></div>
-            <div class="login"><button name="botão" value="Enviar" id="botao">Enviar</button></div>
+            <div class="login"><button name="botão" id="botão">Enviar</button></div>
         </form>
     </section>
     <footer>
         <h4>Feito por: Gabriel Ledur, Giovane Müller e João Vogel</h4>
     </footer>
-    <script src='main.js'></script>
 </body>
 </html>

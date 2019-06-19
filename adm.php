@@ -1,11 +1,16 @@
+<?php
+session_start();
+if(!isset($_SESSION['usuario'])){
+    header("location: sair.html");
+}
+?>
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Trabalho de Programação</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="estilo.css">
 </head>
     <body>
         <header>
@@ -23,5 +28,6 @@
         <footer>
             <h5>Feito por: Gabriel Ledur, Giovane Müller e João Vogel</h5>
         </footer>
+    <script src='main.js'></script>
     </body>
 </html>

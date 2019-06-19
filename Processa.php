@@ -1,19 +1,14 @@
 <?php
-    if(isset($_POST) && $_POST["botão"] == "Enviar"){
-        if($_POST['usuario'] == 'admin' && $_POST['senha'] == 'admin' ){
-            session_start();
-            header("location: adm.php");        
-        }else if($_POST['usuario'] != 'admin' || $_POST['senha'] != 'admin'){
-            header("location: sair.php");
-        }
-    }
-    if(isset($_POST) && $_POST["botão"] == "Enviar"){
+    session_start();
         if($_POST['usuario'] == 'professor' && $_POST['senha'] == 'professor' ){
-            session_start();
-            header("location: Professor.php");        
-        }else if($_POST['usuario'] != 'professor' || $_POST['senha'] != 'professor'){
+            $_SESSION['professor'] = $_POST['professor'];
+            $_SESSION['senha'] = $_POST['senha'];
+            header("location: Professor.php");       
+        }else if($_POST['usuario'] == 'admin' && $_POST['senha'] == 'admin' ){
+            $_SESSION['usuario'] = $_POST['usuario'];
+            $_SESSION['senha'] = $_POST['senha'];
+            header("Location: adm.php");
+        }else{
             header("location: sair.php");
         }
-    }
-
 ?>
