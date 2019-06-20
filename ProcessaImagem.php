@@ -4,4 +4,5 @@ $partes = explode('.',$_FILES['foto']['name']); //pegar o tipo de arquivo. Exemp
 $ext = end($partes);
 $caminho = "Imagens"."/".$nome.".".$ext;
 move_uploaded_file($_FILES['foto']['tmp_name'],$caminho);
-header("location: adm.php"); //Voltar para a pagina anterior       
+header("location: adm.php"); //Voltar para a pagina anterior
+?>      

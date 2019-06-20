@@ -1,9 +1,9 @@
 <?php
     session_start();
         if($_POST['usuario'] == 'professor' && $_POST['senha'] == 'professor' ){
-            $_SESSION['professor'] = $_POST['professor'];
+            $_SESSION['usuario'] = $_POST['usuario'];
             $_SESSION['senha'] = $_POST['senha'];
-            header("location: Professor.php");       
+            header("Location: Professor.php");       
         }else if($_POST['usuario'] == 'admin' && $_POST['senha'] == 'admin' ){
             $_SESSION['usuario'] = $_POST['usuario'];
             $_SESSION['senha'] = $_POST['senha'];

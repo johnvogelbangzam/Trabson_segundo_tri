@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=B612+Mono&display=swap');
-body {
+body, html {
     font-family: 'B612 Mono', monospace;
     display: grid;
+    background-color: turquoise;
     grid-template-columns: 0.5fr 2fr 0.5fr;
     grid-template-rows: 0.5fr 2fr 0.5fr;
     height: 100vh;
     width: 100vw;
-    grid-template-areas: " . header . " " . section . " " . footer . "
+    grid-template-areas: 
+    " . header . " 
+    " section section section " 
+    " . footer . "
 }
+
+a{ 
+text-decoration:none;
+color: black;
+font-family: 'B612 Mono', monospace;
+} 
 
 .login {
     display: flex;
@@ -31,6 +41,108 @@ section {
     align-items: center;
 }
 
+#sala{
+    display: grid;
+    grid-area: section;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "fila1 fila2 fila3 fila4 fila5 fila6"
+}
+
+img{
+    border-style: solid;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+#professor{
+    display: flex;
+    grid-area: professor;
+    flex-direction: column;
+}
+
+#fila1{
+    display: flex;
+    grid-area: fila1;
+    flex-direction: column-reverse;
+}
+#fila2{
+    display: flex;
+    grid-area: fila2;
+    flex-direction: column;
+}
+
+#fila3{
+    display: flex;
+    grid-area: fila3;
+    flex-direction: column;
+}
+
+#fila4{
+    display: flex;
+    grid-area: fila4;
+    flex-direction: column;
+}
+
+#fila5{
+    display: flex;
+    grid-area: fila5;
+    flex-direction: column;
+}
+#fila6{
+    display: flex;
+    grid-area: fila6;
+    flex-direction: column;
+}
+
+#laboratório{
+    flex-direction: column;
+    display: grid;
+    grid-area: section;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "fileira1 fileira2 . . fileira3 fileira4 fileira5"
+}
+
+#fileira1{
+    display: flex;
+    grid-area: fileira1;
+    flex-direction: row;
+}
+
+#fileira2{
+    display: flex;
+    grid-area: fileira2;
+    flex-direction: row;
+}
+
+#fileira3{
+    display: flex;
+    grid-area: fileira3;
+    flex-direction: row;
+}
+
+#fileira4{
+    display: flex;
+    grid-area: fileira4;
+    flex-direction: row;
+}
+
+#fileira5{
+    display: flex;
+    grid-area: fileira5;
+    flex-direction: row;
+}
+
+#espaço{
+    display: flex;
+    grid-area: espaço;
+    flex-direction: row;
+}
+
 footer {
     display: flex;
     grid-area: footer;
@@ -38,8 +150,7 @@ footer {
     justify-content: center;
 }
 
-input,
-button {
+input, button {
     size: 20px;
     font-size: 16px;
     border-radius: 5px;
